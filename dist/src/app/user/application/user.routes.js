@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const cached_async_1 = require("../../../utilities/cached-async");
+const check_token_1 = require("../../../middleware/check_token/check-token");
+const upadte_user_validation_1 = require("../../../middleware/validations/upadte-user-validation");
+const delete_user_validation_1 = require("../../../middleware/validations/delete-user-validation");
+const user_controller_1 = require("./user.controller");
+const router = (0, express_1.Router)();
+router.put("/update-user", (0, check_token_1.checkToken)(), (0, upadte_user_validation_1.validateUpadteUser)(upadte_user_validation_1.createFormUpadteUserValidation), (0, cached_async_1.cachedAsync)(user_controller_1.putUser));
+router.post("/delete-user", (0, check_token_1.checkToken)(), (0, delete_user_validation_1.validateDeleteUser)(delete_user_validation_1.createFormdeleteUserValidation), (0, cached_async_1.cachedAsync)(user_controller_1.DropUser));
+exports.default = router;

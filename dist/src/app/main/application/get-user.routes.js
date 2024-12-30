@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const check_token_1 = require("../../../middleware/check_token/check-token");
+const get_all_transaction_validation_1 = require("../../../middleware/validations/get-all-transaction-validation");
+const get_user_controller_1 = require("./get-user.controller");
+const cached_async_1 = require("../../../utilities/cached-async");
+const router = (0, express_1.Router)();
+router.post("/get-all-users", (0, check_token_1.checkToken)(), (0, get_all_transaction_validation_1.getAllTransactionValidate)(get_all_transaction_validation_1.getAllTransactionValidation), (0, cached_async_1.cachedAsync)(get_user_controller_1.getAllUser));
+exports.default = router;
