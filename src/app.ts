@@ -3,6 +3,7 @@ import logger from "morgan";
 import cors from "cors";
 import helmet from "helmet";
 import router from "./routes/index.routes";
+import defaultRoot from "./app/default/application/default.routes";
 import { resError } from "./utilities/res-error";
 export const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(cors({}));
 app.use(logger("dev"));
+app.use(defaultRoot);
 app.use("/api", router);
 
 interface ErrorResponse extends Error {
