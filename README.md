@@ -1,15 +1,15 @@
 # listuser-api
 
-listuser-api es una mini API creada para una prueba técnica. Esta API ha sido desarrollada como parte del repositorio vau_backend_technical_test.
+listuser-api is a mini API created for a technical test. This API has been developed as part of the repository vau_backend_technical_test.
 
-El propósito principal de listuser-api es proporcionar una forma eficiente y fácil de gestionar y listar usuarios a través de endpoints REST. A continuación se detallan algunas características clave de esta API:
+The main purpose of listuser-api is to provide an efficient and easy way to manage and list users through REST endpoints. Below are some key features of this API:
 
-1. Creación de usuarios: Permite agregar nuevos usuarios con la información básica necesaria.
-2. Listado de usuarios: Proporciona una lista completa de todos los usuarios registrados.
-3. Actualización de usuarios: Facilita la actualización de información existente de los usuarios.
-4. Eliminación de usuarios: Permite eliminar usuarios de la lista de registros.
+1. User Creation: Allows adding new users with the necessary basic information.
+2. User Listing: Provides a complete list of all registered users.
+3. User Update: Facilitates the updating of existing user information.
+4. User Deletion: Allows deleting users from the list of records.
 
-Esta API está construida utilizando TypeScript junto con Node.js, Express y PostgreSQL. La arquitectura de la API sigue un enfoque hexagonal, lo que asegura que el código sea limpio, mantenible y fácil de extender. Para gestionar las consultas de los usuarios de manera segura, se implementa una capa de autenticación utilizando JWT (JSON Web Token).
+This API is built using TypeScript along with Node.js, Express, and PostgreSQL. The API's architecture follows a hexagonal approach, ensuring the code is clean, maintainable, and easy to extend. To securely manage user requests, an authentication layer using JWT (JSON Web Token) is implemented.
 
 
 # Installation
@@ -20,7 +20,7 @@ Esta API está construida utilizando TypeScript junto con Node.js, Express y Pos
 
 
 # Documentation
-Esta es la documentación oficial de listuser-api. Para más detalles sobre su uso y configuración, visita el siguiente enlace:
+This is the official documentation for listuser-api. For more details on its usage and configuration, visit the following link:
 1. [View the documentation](https://aesthetic-squirrel-569165.netlify.app)
 
 
