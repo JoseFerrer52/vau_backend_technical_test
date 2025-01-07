@@ -25,4 +25,5 @@ This is the official documentation for listuser-api. For more details on its usa
 
 
 # App running
-5. [View the application]
+If you want to see a more realistic example of how the ListUser API works with test views, visit the following link:
+1. [View the application](https://velvety-tulumba-8ba4fd.netlify.app/sign-in)
